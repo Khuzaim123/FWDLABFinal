@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './BookPage.css';
 
+
+// Component to display the list of books
 const BookList = ({ books, onDelete }) => (
     <div className="book-list">
         {books.map((book) => (
@@ -15,6 +17,7 @@ const BookList = ({ books, onDelete }) => (
     </div>
 );
 
+// Component for the book addition form
 const BookForm = ({ onSubmit }) => {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
@@ -39,7 +42,7 @@ const BookForm = ({ onSubmit }) => {
     );
 }
 
-
+// Main BookPage component
 const BookPage = () => {
     const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);

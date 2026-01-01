@@ -1,5 +1,7 @@
 import BookModel from "./book.js";
 
+
+// Controller to add a new book
 export const addBook = async (req, res) => {
     try {
         const book = req.body;
@@ -13,6 +15,7 @@ export const addBook = async (req, res) => {
     }
 };
 
+// Controller to get all books
 export const getBooks = async (req, res) => {
     try {
         const books = await BookModel.find();
@@ -22,6 +25,8 @@ export const getBooks = async (req, res) => {
     }
 };
 
+
+// Controller to delete a book by id
 export const deleteBook = async (req , res) => {
     try {
         const book = await BookModel.findByIdAndDelete(req.params.id);

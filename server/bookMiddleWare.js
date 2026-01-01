@@ -1,5 +1,6 @@
 import BookModel from "./book.js";
 
+// Middleware to requests and fetch all books
 export const bookMiddleware = async (req , res, next) => {
     try {
         const books = await BookModel.find();

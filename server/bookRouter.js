@@ -5,6 +5,8 @@ import {
     deleteBook
 } from './bookController.js';
 
+
+// DEfine router for book routes
 const router = express.Router();
 
 router.post('/', addBook);
