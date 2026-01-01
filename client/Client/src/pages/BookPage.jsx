@@ -96,6 +96,7 @@ const BookPage = () => {
         <div className="book-page">
             <header className="page-header">
                 <h1>Book Management</h1>
+                <br />
                 <button className="btn-primary" onClick={() => setShowForm(!showForm)}>
                     {showForm ? 'Cancel' : 'Add New Book'}
                 </button>

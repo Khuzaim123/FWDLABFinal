@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -39,4 +40,57 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Tablets and Large Phones (768px to 1024px) */
+@media (max-width: 1024px) {
+  #root {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablets and Medium Devices (600px to 768px) */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 5em;
+    padding: 1.25em;
+  }
+}
+
+/* Small Phones and Mobile Devices (480px to 600px) */
+@media (max-width: 600px) {
+  #root {
+    padding: 0.75rem;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
+
+/* Extra Small Phones (320px to 480px) */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    height: 3em;
+    padding: 0.75em;
+  }
+
+  .card {
+    padding: 1em;
+  }
 }
